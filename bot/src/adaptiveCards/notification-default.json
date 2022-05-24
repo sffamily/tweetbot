@@ -1,0 +1,37 @@
+{
+  "$schema": "http://adaptivecards.io/schemas/adaptive-card.json",
+  "type": "AdaptiveCard",
+  "version": "1.4",
+  "body": [
+    {
+      "type": "Image",
+      "url": "${tweetprofile}"
+    },
+    {
+      "type": "TextBlock",
+      "text": "${tweetusername}",
+      "size": "Large",
+      "weight": "Bolder",
+      "wrap": true
+    },
+    {
+      "type": "TextBlock",
+      "text": "${tweettime}",
+      "isSubtle": false,
+      "wrap": true
+    },
+    {
+      "type": "TextBlock",
+      "text": "${tweettext}",
+      "isSubtle": true,
+      "wrap": true
+    }
+  ],
+  "actions": [
+    {
+      "type": "Action.OpenUrl",
+      "title": "View Details",
+      "url": "${tweeturl}"
+    }
+  ]
+}
